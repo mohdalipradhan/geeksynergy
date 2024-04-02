@@ -28,7 +28,7 @@ const LoginPage = () => {
       storedUser.password === loginData.password
     ) {
         setErrorMessage("True"); // I Set logged in state to true
-        navigate("./home")
+        navigate("../home")
         setIsLoggedIn(true)
         
     } else {
@@ -38,7 +38,7 @@ const LoginPage = () => {
 
   return (
     <div className='parentauth'>
-      <div>
+      <div className='childpaerntauth'>
       <h1>Login</h1>
       <span style={{ fontSize: "10px", color: "green" }}>Already a user? Login</span>
 

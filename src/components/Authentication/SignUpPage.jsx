@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const SignUpPage = () => {
   const [formData, setFormData] = useState({
@@ -10,6 +11,7 @@ const SignUpPage = () => {
   });
 
   const [message, setMessage] = useState("")
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -32,11 +34,12 @@ const SignUpPage = () => {
     });
 
     setMessage("Now you can login")
+    navigate('/login')
   };
 
   return (
     <div className='parentauth'>
-      <div>
+      <div className='childpaerntauth'>
         <h1>Sign Up</h1>
         <span style={{ fontSize: "10px", color: "green" }}>Not a user ? SignUp</span>
         <form style={{ backgroundColor: 'white' }} className='paddingAuth' onSubmit={handleSubmit}>

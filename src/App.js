@@ -33,7 +33,8 @@ function App() {
         <AuthLogin.Provider value={{ isLoggedIn, setIsLoggedIn }}>
           <HeaderSection />
           <Routes>
-            <Route path='/' element={<CombinedAuth />} />
+            <Route path='/' element={<SignUpPage />} />
+            <Route path='/login' element={<LoginPage />} />
             <Route path='/home' element={<Home />} />
             <Route path='/home/:userId' element={<ProductSimplePage />} />
           </Routes>

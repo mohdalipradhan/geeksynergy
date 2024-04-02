@@ -28,16 +28,16 @@ const Home = () => {
     try {
 
       // due to corps policy this are not working so I am using hardcoded data 
-      // const config = {
-      //   "category": "movies",
-      //   "language": "kannada",
-      //   "genre": "all",
-      //   "sort": "voting"
-      // }
-      // const response = await axios.post("https://hoblist.com/api/movieList", config);
-      // console.log(response)
-      console.log(apiData);
-      setMovies(apiData.result)
+      const config = {
+        "category": "movies",
+        "language": "kannada",
+        "genre": "all",
+        "sort": "voting"
+      }
+      const response = await axios.post("https://hoblist.com/api/movieList", config);
+      console.log(response)
+      // console.log(apiData);
+      setMovies(response.data.result)
       setLoader(false)
     } catch (error) {
       console.log(error)

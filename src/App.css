@@ -1,8 +1,8 @@
-*{
+* {
     margin: 0;
 }
 
-.child_node{
+.child_node {
     display: flex;
     align-items: center;
 }
@@ -19,7 +19,7 @@
     flex-wrap: wrap;
 }
 
-.child_subnode2{
+.child_subnode2 {
     flex-grow: 5;
 }
 
@@ -28,19 +28,29 @@
     justify-content: space-between;
 }
 
-.paddingAuth {
-    border: 1px solid lightcyan;
+.paddingAuth{
+    background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    gap: 10px;
-    padding: 20px;
-    width: 300px;
+    gap: 5px;
+}
+
+.parentauth {
+    /* width: auto; */
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    padding: 7px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gainsboro;
 }
 
 .parentauth {
     width: 100vw;
-    
+
 }
 
 .parentauth {
@@ -69,12 +79,12 @@
     justify-content: space-evenly;
 }
 
-.headingandcontent{
-        display: flex;
-        flex-direction: column;
+.headingandcontent {
+    display: flex;
+    flex-direction: column;
 }
 
-.rightmaincontent{
+.rightmaincontent {
     width: 199px;
 }
 
@@ -96,7 +106,7 @@
     background-color: white;
 }
 
-.btndesign{
+.btndesign {
     width: 100%;
     background-color: #1F98EC;
     border: none;
@@ -110,7 +120,7 @@
 }
 
 
-.productsmainparent{
+.productsmainparent {
     margin-top: 28px;
     display: flex;
     flex-direction: row;
@@ -121,12 +131,12 @@
     max-width: 1400px;
 }
 
-.btndesign{
+.btndesign {
     color: white;
     cursor: pointer;
 }
 
-.rightmenuSystemsubchild{
+.rightmenuSystemsubchild {
     display: flex;
     list-style: none;
     gap: 30px;
@@ -138,6 +148,16 @@
     padding: 10px;
     gap: 133px;
     background: aliceblue;
+}
+
+.childpaerntauth {
+    display: inline-flex;
+    flex-direction: column;
+    border: 1px solid lightcyan;
+    padding: 10px;
+    border-radius: 3px;
+    gap: 20px;
+    background: white;
 }
 
 @media only screen and (max-width: 600px) {
@@ -155,4 +175,4 @@
         gap: 0px;
         background: aliceblue;
     }
-  }
+}
