@@ -4,6 +4,8 @@ import { IoIosArrowDropdownCircle } from "react-icons/io";
 import { IoIosArrowDropupCircle } from "react-icons/io";
 import { useNavigate } from 'react-router-dom';
 import { AuthLogin } from '../../App';
+import apiData from '../../data/data';
+
 
 
 
@@ -22,17 +24,20 @@ const Home = () => {
   }
 
   async function getData() {
-
+    //Its not working because of corse policy
     try {
-      const config = {
-        "category": "movies",
-        "language": "kannada",
-        "genre": "all",
-        "sort": "voting"
-      }
-      const response = await axios.post("https://hoblist.com/api/movieList", config);
-      console.log(response)
-      setMovies(response.data.result)
+
+      // due to corps policy this are not working so I am using hardcoded data 
+      // const config = {
+      //   "category": "movies",
+      //   "language": "kannada",
+      //   "genre": "all",
+      //   "sort": "voting"
+      // }
+      // const response = await axios.post("https://hoblist.com/api/movieList", config);
+      // console.log(response)
+      console.log(apiData);
+      setMovies(apiData.result)
       setLoader(false)
     } catch (error) {
       console.log(error)
