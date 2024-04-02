@@ -94,7 +94,7 @@ const SignUpPage = () => {
               <option value="Other">Other</option>
             </select>
           </div>
-          <button type="submit">Sign Up</button>
+          <button style={{backgroundColor: "#2196F3", border: "none", padding: 5, borderRadius: "4px", cursor: 'pointer'}} type="submit">Sign Up</button>
         </form>
         <span style={{fontWeight: "bolder",fontSize: "13px" , color:"green"}}>{message}</span>
       </div>

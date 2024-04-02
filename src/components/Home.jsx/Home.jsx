@@ -46,7 +46,7 @@ const Home = () => {
 
   if (isLoggedIn) {
     return (
-      <div style={{width:"100vw ", display: 'flex', justifyContent: "center"}}>
+      <div style={{width:"100vw ", display: 'flex', justifyContent: "center", backgroundColor: "gainsboro"}}>
         <div className='productsmainparent'>
         {Loader ? "loading ..." : movies.map((item) => (
           <div key={item._id} className='product_1stChild'>
@@ -54,10 +54,10 @@ const Home = () => {
 
               <div className="leftvote">
 
-                <span><IoIosArrowDropupCircle /></span>
+                <span style={{cursor: "pointer"}}><IoIosArrowDropupCircle /></span>
                 <span>{item.totalVoted}</span>
-                <span><IoIosArrowDropdownCircle /></span>
-                <span style={{ fontSize: "9px" }}>Votes</span>
+                <span style={{cursor: "pointer"}}><IoIosArrowDropdownCircle /></span>
+                <span  style={{ fontSize: "9px" }}>Votes</span>
 
               </div>
 
