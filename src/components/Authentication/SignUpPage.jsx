@@ -37,7 +37,7 @@ const SignUpPage = () => {
   return (
     <div className='parentauth'>
       <div>
-        <h1>Sign Up</h1>
+        <h1 style={{color: "red"}}>Sign Up</h1>
         <span style={{ fontSize: "10px", color: "green" }}>Not a user ? SignUp</span>
         <form style={{ backgroundColor: 'white' }} className='paddingAuth' onSubmit={handleSubmit}>
           <div className='signUpList'>
@@ -94,7 +94,7 @@ const SignUpPage = () => {
               <option value="Other">Other</option>
             </select>
           </div>
-          <button style={{backgroundColor: "#2196F3", border: "none", padding: 5, borderRadius: "4px", cursor: 'pointer'}} type="submit">Sign Up</button>
+          <button style={{color:"white", fontWeight: 'bold', backgroundColor: "#2196F3", border: "none", padding: 5, borderRadius: "4px", cursor: 'pointer'}} type="submit">Sign Up</button>
         </form>
         <span style={{fontWeight: "bolder",fontSize: "13px" , color:"green"}}>{message}</span>
       </div>

@@ -63,7 +63,7 @@ const LoginPage = () => {
             required
           />
         </div>
-        <button style={{backgroundColor: "#2196F3", border: "none", padding: 5, borderRadius: "4px", cursor: 'pointer', marginTop: 88}} type="submit">Login</button>
+        <button style={{color:"white", fontWeight: 'bold',backgroundColor: "#2196F3", border: "none", padding: 5, borderRadius: "4px", cursor: 'pointer', marginTop: 88}} type="submit">Login</button>
         {errorMessage && <p style={{fontWeight: "bolder",fontSize: "13px" , color:"red"}}>{errorMessage}</p>}
       </form>
       </div>
