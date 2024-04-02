@@ -18,6 +18,7 @@ const Home = () => {
 
   const handleNavigation = (id) => {
     navigate(`/home/${id}`)
+    console.log("hello")
   }
 
   async function getData() {
