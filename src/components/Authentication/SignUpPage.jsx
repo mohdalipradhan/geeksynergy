@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { v4 as uuid } from 'uuid'
 
 const SignUpPage = () => {
   const [formData, setFormData] = useState({
@@ -24,6 +25,12 @@ const SignUpPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     localStorage.setItem('user', JSON.stringify(formData));
+    const newUuid = uuid();
+    const userId = newUuid.substring(0, 4);    localStorage.setItem("userId", newUuid);
+    window.dataLayer.push({
+      'event' : 'login',
+      'userId' : userId
+    })
 
     setFormData({
       name: '',
