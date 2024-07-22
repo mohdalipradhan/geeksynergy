@@ -29,7 +29,8 @@ const SignUpPage = () => {
     const userId = newUuid.substring(0, 4);    localStorage.setItem("userId", newUuid);
     window.dataLayer.push({
       'event' : 'login',
-      'userId' : userId
+      'userId' : userId,
+      'profession': formData.profession
     })
 
     setFormData({
